@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/public/milligram.css">
+        <title>Hourglass - Create project</title>
+    </head>
+    <body>    
+        <div class="container">
+            <div class="row">
+                <div class="column column-60 column-offset-20">
+                    <h1>Import csv file</h1>
+                    <p>
+                        You can import csv file without header, if form title, project_name, time and we will add it to your worklog.
+                        <br>
+                        Currently CSV import is limited by 10 records                    
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column column-60 column-offset-20">
+                    <form method="POST" action="/home/import" enctype="multipart/form-data">
+                        <fieldset>
+                            <label for="import_file">Import file</label>
+                            <input name="import_file" id="import_file" type="file" />
+                            <input type="submit" value="Отправить файл" />                        
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>    
+    </body>
+</html>

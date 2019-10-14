@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/public/milligram.css">
+        <title>Hourglass - Login</title>
+    </head>
+    <body>    
+        <div class="container">
+            <div class="row">
+                <div class="column column-60 column-offset-20">
+                    <h1>Welcome to Hourglass!</h1>
+                    <p>
+                        To proceed with Hourglass you need to login, if your username cannot be found it will be registered immediately.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column column-60 column-offset-20">
+                    <form method="POST" action="/login">
+                        <fieldset>
+                            <label for="username">Username</label>
+                            <input required="required" type="text" placeholder="Username" name="username" id="username"/>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password"/>                        
+                            <input type="submit" value="Login">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>    
+    </body>
+</html>

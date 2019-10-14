@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/public/milligram.css">
+        <title>Hourglass - Best project time tracker in all multiverse</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="column column-60 column-offset-20">
+                    <h1>Welcome to Hourglass, [% username %]!</h1>
+                </div>
+            </div>
+            <div class="row">
+
+            
+                <div class="column column-60 column-offset-20">
+                    <ul>
+                        <li><a href="/home/project">Create new project</a></li>
+                        <li><a href="/home/worklog">Add new record to worklog</a></li>
+                        <li><a href="/home/report">Get time by projects report</a></li>
+                        <li><a href="/home/import">Import CSV</a></li>
+                        <li><a href="/logout">Logout</a></li>
+                    </ul>                
+                </div>
+            </div>
+            <div class="row">
+                    <div class="column column-60 column-offset-20">
+                        <h3>Your last 10 work log entries</h3>
+                            <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Title</th>
+                                            <th>Project</th>
+                                            <th>Hours</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    [% FOREACH log IN worklog %]
+                                        <tr>
+                                            <td>[% log.title %]</td>
+                                            <td>[% log.project %]</td>
+                                            <td>[% log.time %]</td>
+                                        </tr>
+                                    [% END %]
+                                    </tbody>
+                                </table>                    
+                    </div>
+            </div>                        
+        </div>            
+    </body>
+</html>

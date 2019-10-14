@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/public/milligram.css">
+        <title>Hourglass - Create Work Log record</title>
+    </head>
+    <body>    
+        <div class="container">
+            <div class="row">
+                <div class="column column-60 column-offset-20">
+                    <h1>Create new work log record</h1>
+                    <p>
+                        Here you can create add new work log record
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column column-60 column-offset-20">
+                    <form method="POST" action="/home/worklog">
+                        <fieldset>
+                            <label for="title">Title</label>
+                            <input required="required" type="text" placeholder="Title" name="title" id="title"/>                        
+                            <label for="project">Project</label>
+                            <select name="project">
+                                <option value=""></option>
+                                [% FOREACH project IN projects %]
+                                    <option value="[% project.id %]">[% project.name %]</option>
+                                [% END %]
+                            </select>
+                            <label for="time">Time in hours(Positive integer)</label>
+                            <input required="required" type="text" placeholder="10" name="time" id="time"/>                        
+                            <input type="submit" value="Create">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>    
+    </body>
+</html>

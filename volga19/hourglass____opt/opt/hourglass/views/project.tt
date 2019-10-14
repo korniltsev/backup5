@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/public/milligram.css">
+        <title>Hourglass - Create project</title>
+    </head>
+    <body>    
+        <div class="container">
+            <div class="row">
+                <div class="column column-60 column-offset-20">
+                    <h1>Create new Project</h1>
+                    <p>
+                        Here you can create a new project to work on
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column column-60 column-offset-20">
+                    <form method="POST" action="/home/project">
+                        <fieldset>
+                            <label for="project">Project name</label>
+                            <input required="required" type="text" placeholder="Project name" name="project" id="project"/>                        
+                            <input type="submit" value="Create">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>    
+    </body>
+</html>
