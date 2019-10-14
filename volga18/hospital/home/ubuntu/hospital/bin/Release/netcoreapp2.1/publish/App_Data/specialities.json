@@ -1,0 +1,26 @@
+﻿[
+  {
+    "Name": "Surgery",
+    "Description": "The surgery department of Medilife Medical Center has a longstanding focus on high quality, responsible surgical care with an emphasis on minimally invasive options as well as experienced open surgery in an ongoing effort to improve our patients’ outcomes."
+  },
+  {
+    "Name": "Dental Care & Oral Surgery",
+    "Description": "The highly qualified dental professionals in the Dental Care and Oral Surgery Department at Mount Sinai Medical Center are dedicated to providing exceptional oral health care to their patients."
+  },
+  {
+    "Name": "Neuroscience",
+    "Description": "Medilife’s Neuroscience Center of Excellence is one of the most comprehensive facilities for the treatment of disorders of the brain, spinal cord and peripheral nerves. We are dedicated to providing a full range of exceptional and compassionate care to neurology patients, helping them recover their quality of life."
+  },
+  {
+    "Name": "Endocrinology",
+    "Description": "Endocrinology focuses primarily on the endocrine organs – those organs whose primary function is hormone secretion – the pancreas, the thyroid, parathyroid, pineal, hypothalamus, adrenal and pituitary glands, and the ovaries and testes."
+  },
+  {
+    "Name": "Cancer center",
+    "Description": "The Medilife’s Comprehensive Cancer Center is a nationally recognized, award-winning facility that uses a collaborative, multidisciplinary approach to diagnose and treat cancer. We provide high-quality care, leading innovation and personalized treatment plans for each patient to treat a broad range of cancers."
+  },
+  {
+    "Name": "Cardiology",
+    "Description": "Treating more heart patients than any other hospital in the whole world, your heart is in good hands with us. Our surgeons perform more valve procedures than any other hospital, and they are the region's most experienced in minimally invasive heart surgery."
+  }
+]

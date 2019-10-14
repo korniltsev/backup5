@@ -1,0 +1,4 @@
+if cmd == 'DOWNLOAD':
+	round_num, ip_address = read_message(self.request).split(':')
+	ctext = retrieve_data(DB_NAME, round_num, ip_address)
+	send_message(self.request, ctext)

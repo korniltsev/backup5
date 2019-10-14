@@ -1,0 +1,49 @@
+CLOUD_IP = os.getenv('CLOUD_IP', 'cloud.final.2018.volgactf.ru')
+CLOUD_PORT = int(os.getenv('CLOUD_PORT', 7778))
+
+
+async def push(endpoint, capsule, label, metadata):
+    fd = None
+    try:
+        fd = socket.create_connection((endpoint, SERVICE_PORT), timeout=SOCKET_TIMEOUT)
+    except Exception as ex:
+        return Result.DOWN, '', str(ex)
+
+    try:
+        send_message(fd, b'PUSH')
+        send_message(fd, b'vlg160r1:passphrase')
+        key = read_message(fd)
+        cipher = AES.new(key[:16])
+        padding = 16 - len(capsule) % 16
+        capsule = bytes(capsule.encode('utf-8')) + padding * padding.to_bytes(1, 'big')
+        ctext = base64.b64encode(cipher.encrypt(capsule))
+
+        # shut down the established connection to service
+        if read_message(fd) != b'+':
+            return Result.MUMBLE, '', 'MUMBLE'
+        send_message(fd, b'EXIT')
+
+        # working with cloud
+        try:   
+            cl = socket.create_connection((CLOUD_IP, CLOUD_PORT), timeout=SOCKET_TIMEOUT)
+        except Exception as ex:
+            return Result.DOWN, '', str(ex)
+
+        send_message(cl, 'UPLOAD')
+        send_message(cl, str(metadata.round))
+        send_message(cl, ctext)
+
+        # shut down the established connection to service
+        if read_message(cl) != '+':
+            return Result.MUMBLE, '', 'MUMBLE'
+        send_message(cl, 'EXIT')
+        
+        label = '{0}:{1}'.format(str(metadata.round), 'a')
+        return Result.UP, label, 'UP'
+
+    except Exception as ex:
+        return Result.MUMBLE, '', str(ex)
+
+    finally:
+        if fd:
+            fd.close()

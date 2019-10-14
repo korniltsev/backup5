@@ -1,0 +1,13 @@
+﻿{
+  "weekdays": {
+    "from": "8",
+    "to": "19",
+    "interval": "1"
+  },
+  "holidays": {
+    "from": "10",
+    "to": "17",
+    "interval": "1"
+  }
+
+}

@@ -1,0 +1,92 @@
+﻿[
+  {
+    "Name": "Stephen Ungen",
+    "SpecialityId": 1,
+    "Description": "Chair of the Department of Surgery"
+  },
+  {
+    "Name": "Jack N. Afinos",
+    "SpecialityId": 1,
+    "Description": "MD, Surgery"
+  },
+  {
+    "Name": "Deborah Johnson",
+    "SpecialityId": 1,
+    "Description": "Chief, Division of Surgery"
+  },
+  {
+    "Name": "Jeffrey Jackson",
+    "SpecialityId": 2,
+    "Description": "Chief, Division of Oral Surgery"
+  },
+  {
+    "Name": "Andrew Hirschy",
+    "SpecialityId": 2,
+    "Description": "Chief, Division of Dentistry"
+  },
+  {
+    "Name": "Frank L. Nickson",
+    "SpecialityId": 2,
+    "Description": "MD, Dental Care"
+  },
+  {
+    "Name": "George Washington",
+    "SpecialityId": 3,
+    "Description": "Chief, Division of Neurology"
+  },
+  {
+    "Name": "Liza F. Adopian",
+    "SpecialityId": 3,
+    "Description": "Neurology, Neuromuscular Medicine"
+  },
+  {
+    "Name": "Anna Michael Abemor",
+    "SpecialityId": 3,
+    "Description": "MD, Neurology"
+  },
+  {
+    "Name": "Nicholas Andersen",
+    "SpecialityId": 3,
+    "Description": "Neurology, Neuromuscular Medicine"
+  },
+  {
+    "Name": "Mark Sapan",
+    "SpecialityId": 4,
+    "Description": "MD, Endocrinology"
+  },
+  {
+    "Name": "Joseph Robert Nicholson",
+    "SpecialityId": 4,
+    "Description": "Chief, Division of Endocrinology"
+  },
+  {
+    "Name": "Elisa Malfano",
+    "SpecialityId": 4,
+    "Description": "MD, Endocrinology"
+  },
+  {
+    "Name": "Michael A. Blau",
+    "SpecialityId": 5,
+    "Description": "Chief, Division Ofhematology & Oncology"
+  },
+  {
+    "Name": "John G. Akhund",
+    "SpecialityId": 5,
+    "Description": "MD, Medical Oncology"
+  },
+  {
+    "Name": "James Appelbaum",
+    "SpecialityId": 6,
+    "Description": "Cardiology, Internal Medicine"
+  },
+  {
+    "Name": "Laura Angelino",
+    "SpecialityId": 6,
+    "Description": "Chief, Division of Cardiology"
+  },
+  {
+    "Name": "Marcello Adoni",
+    "SpecialityId": 6,
+    "Description": "Cardiology, Internal Medicine"
+  }
+] 
